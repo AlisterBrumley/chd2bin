@@ -1,0 +1,6 @@
+#! /bin/bash
+
+for file in *.chd
+do 
+	chdman extractcd -i "${file}" -o "${file}.cue" -ob "${file}.bin"
+done
